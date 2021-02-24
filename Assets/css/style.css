@@ -1,0 +1,88 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fdfeff;
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  background-color: hsl(209, 69%, 24%);
+}
+
+.card {
+  background-color: hsl(268, 44%, 32%);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+.card-footer {
+  text-align: center;
+  color: #fdfeff;
+  background-color: hsl(209, 69%, 24%);
+
+}
+
+.btn {
+  border: none;
+  background-color: rgb(51, 77, 116);
+  border-radius: 5px;
+  box-shadow: rgba(192, 190, 190, 0.301) 0px 1px 6px 0px rgba(0, 0, 0,) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 5px 5px 20px 5px;
+  padding: 14px 34px;
+  text-align: center;
+}
+
+.bg-start-quiz {
+  background-image: url("/Assets/pic/sergi-viladesau-ISMmYTfr2ts-unsplash_web.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bg-quiz {
+  background-image: url("/Assets/pic/jack-finnigan-CR9EGFPVNoU-unsplash_web.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bg-quiz-over {
+  background-image: url("/Assets/pic/alp-allen-altiner-DfAJSNZEo5k-unsplash_web.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0.5;
+}  
+
+.bg-highscore {
+  background-image: url("/Assets/pic/amauri-mejia-IhXrWDckZOQ-unsplash_web.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0.5;
+}

@@ -3,10 +3,11 @@ var time = 75;
 var timeEl = document.getElementById("timer");
 var timerId;
 
-
 var questionsEl = document.getElementById("questions");
 var currIndex = 0;
 var answersEl = document.getElementById("answers");
+
+var highscore = document.getElementById("highscore")
 
 function startQuiz(){
     var startScreen = document.getElementById("startscreen");
@@ -32,7 +33,6 @@ function showQuestion(){
        btncreate.onclick = checkAnswer;
        answersEl.appendChild(btncreate);
    });
-  
 };
 
 // checking annswers right or wrong
