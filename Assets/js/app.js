@@ -1,34 +1,4 @@
-// function strat quiz put them in array
-var questions = [
-    {
-        title: "What is the name of Picassos War painting?",
-        choices:["The Old Guitarist", "Guernica", "Blue Nude", "The Dream"],
-        answer: "Guernica"
-    },
-    {
-        title: "Which style was Claude Monet panting in?",
-        choices:["Surrealism", "Art Deco", "Cubism", "Impressionism"],
-        answer: "Impressionism"
-    },
-    {
-        title: "Who is the artist of 'THE SCREAM'?",
-        choices:["Claude Monet", "Edvard Munch", "Pablo Picasso", "Vincent van Gogh"],
-        answer: "Edvard Munch"
-    },
-    {
-        title: "Who paitet the 'Mona Lisa'?",
-        choices:["Rembrandt van Rijn", "Salvador Dalí", "Antoni Gaudí", "Leonardo da Vinci"],
-        answer: "right answer"
-    },
-    {
-        title: "'The birth of Venus' was paitet by?",
-        choices:["Sandro Botticelli", "Johannes Vermeer", "Antoni Gaudí", "Claude Monet"],
-        answer: "right answer"
-    }
-];
-
 // Global var
-
 var time = 75;
 var timeEl = document.getElementById("timer");
 var timerId;
@@ -103,9 +73,35 @@ function quizOver(){
 };
 
 // function highscore
-function highScore(){
-    var
-};
+function printHighscores() {
+    // either get scores from localstorage or set to empty array
+    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+  
+    // sort highscores by score property in descending order
+    highscores.sort(function(a, b) {
+      return b.score - a.score;
+    });
+  
+    highscores.forEach(function(score) {
+      // create li tag for each high score
+      var liTag = document.createElement("li");
+      liTag.textContent = score.initials + " - " + score.score;
+  
+      // display on page
+      var olEl = document.getElementById("highscores");
+      olEl.appendChild(liTag);
+    });
+  }
+  
+  function clearHighscores() {
+    window.localStorage.removeItem("highscores");
+    window.location.reload();
+  }
+  
+  document.getElementById("clear").onclick = clearHighscores;
+  
+  // run function when page loads
+  printHighscores();
 
 
-
+// local storage
