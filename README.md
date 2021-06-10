@@ -39,17 +39,18 @@ THEN I can save my initials and score
 
 Deployment URL
 
-https://index.html
+https://n-flam.github.io/Quiz_pool/
 
 GitHub URL
 
-https://github.com/.git
+https://github.com/n-flam/Quiz_pool
 
 
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](https://github.com/n-flam/Quiz_pool/blob/main/mockup_1.png)
+![code quiz](https://github.com/n-flam/Quiz_pool/blob/main/mockup_2.png)
 
 
