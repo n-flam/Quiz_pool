@@ -1,101 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quiz about Art</title>
 
-    <!--Bootstrapp CSS added for layout-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="/Assets/css/style.css" />
+</head>
 
-  </head>
-  <body>
-
-    <!-- Start Wrapper -->
-    <div class="wrapper">
-
-      <!-- Start Header -->
-      <header class="jumbotron header text-light">
-          <div class="row">
-              <div id="timer"> Timer:</div>
-          </div>
-          <div class="row">
-            <div id="score"> Score:</div>
-        </div>
-        <h1 class="text-center">Quiz about Art</h1>
-      </header>
-      <!-- End Header -->
-
-      <!-- Start Wrapper -->
-      <div class="card">
-      
-        <!-- Start Quiz 
-        <div id="startscreen" class="row text-center card bg-start-quiz hide">
-            <div class="col">
-                <h2>Start the Quiz</h2>
-            </div>
-            <div class="col">
-                <span class="flow-text">
-                    <div>
-                        <button id="startbtn" class="btn">Start Quiz</button>
-                    </div>
-                </span>
-            </div>
-        </div>-->
-
-
-         <!-- Start Questions 
-         <div id="questions" class="row text-center card bg-quiz">
-            <h2  id="questionTitle">questions here</h2>
-            <div class="col s12 m6">
-                <span class="flow-text">
-                    <div id="answers">
-                        <h3>Choose the right answer</h3>
-                    </div>
-                </span>
-            </div>
-        </div>-->
-
-        <!-- EndScreen 
-        <div id="endscreen" class="row card text-center bg-quiz-over hide">
-            <div class="col s12 m6" >
-                <h2>the Game is over</h2>
-                <p>your finala score is: 
-                    <span id="finalscore"></span>
-                </p>
-                  <p>
-                    <button id="submit" class="btn">Submit</button>
-                  </p>
-            </div>
-        </div>-->
-
-        <!-- Highscore -->
-        <div id="highscores" class="row card text-center bg-highscore hide">
-            <div class="col s12 m6">
-                <h2>Highscores List</h2>
-                <p>
-                  <button id="clear" class="btn">Cleare Higscore</button>
-                </p>
+<body>
+    <!-- Start Navigation -->
+    <div id="controls">
+        <div id="info">
+            <button id="scores">View High Scores</button>
+            <div id="timer">
+                <p>Time: <span id="time">0</span></p>
             </div>
         </div>
-
-      </div>
     </div>
-    <!-- End Wrapper -->
+    <!-- End Navigation -->
+
+    <div class="positionWrapper conatiner" >
+        <section id="intro">
+            <h1>Quiz About Art</h1>
+            <p>Try to answer the following questions related to ART within the time limit.</br>
+                An incorrect answer will penalize you by 15 seconds.
+            </p>
+            <button>Start Quiz</button>
+
+        </section>
+        <!-- Placeholder question -->
+        <section id="quizContainer" class="hide">
+            <p id="title"></p>
+            <!-- Buttons placeholder for answers-->
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <div id="scoreIndicator" class="invisible">
+                <p>&nbsp;</p>
+            </div>
+        </section>
+
+        <!-- start placeholder end result -->
+        <section id="finish" class="hide">
+            <h1>All Done</h1>
+            <p>Your final score is&nbsp;<span id="score"></span></p>
+            <div id="records">
+                <p>Enter initials: </p><input id="initials" type="text"> <button>Submit</button>
+            </div>
+            <div id="errorIndicator" class="invisible">
+                <p>&nbsp;</p>
+            </div>
+        </section>
+        <!-- end placeholder end result -->
+
+        <!-- start Highscore section -->
+        <section id="highScores" class="hide">
+            <h1>High Scores</h1>
+            <div>
+
+            </div>
+            <button id="reset">Go Back</button> <button id="clearScores">Clear Highscores</button>
+        </section>
+        <!-- end Highscore section -->
+    </div>
+
+
     <!-- Start Main Footer -->
     <div class="card-footer text-center">
-        <div>
-            Footer text come here
-        </div>
+      <div>
+        <div className="row">
+          <div className="col">
+          <span>
+            Made with <i class="far fa-heart"></i> By 
+            <a href="dontforgetme" target="blank"></a>
+              Nadja
+          </span>
+          </div>
       </div>
-      <!-- End Main Footer -->
+      <div className="row">
+          <div className="col">
+          <span> © 2021 Copyright </span>
+          </div>
+      </div> 
+      </div>
+    </div>
+    <!-- End Main Footer -->
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="/Assets/js/app.js"></script>
-    <script type="text/javascript" src="/Assets/js/questions.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
 
-  </body>
+    <script src="assets.js"></script>
+    <script src="script.js"></script>
+
+</body>
 </html>

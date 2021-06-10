@@ -1,0 +1,195 @@
+/* styles body and hero*/
+body {
+    background-image: url("assets/alp-allen-altiner-DfAJSNZEo5k-unsplash_web.jpg");
+    background-color: hsl(209, 69%, 24%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: larger;
+  }
+
+  h1, p {
+    color: rgb(255, 255, 255);
+    text-shadow: black 2px 2px;
+  }
+  
+  html,body {
+    font-family: 'Halant', serif;
+    color: white;
+    height:100%;
+  } 
+
+  /* area specific styles */
+  #highScores div div {
+    padding: 5px;
+  }
+  
+  #highScores div div:nth-child(odd) {
+    background-color: white;
+    color: black;
+  }
+  
+  #highScores button {
+    margin:10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  #highScores button:hover {
+    background-color: rgb(86, 156, 235);
+  }
+    
+  /* class styles to hide elements */
+.hide {
+    display:none;
+  }
+  
+  .invisible {
+    visibility:hidden;
+  }
+  
+  .disable {
+  pointer-events:none;
+  }
+  /* styles for sections*/
+
+.positionWrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    flex-direction: column;  
+  }
+  
+  section {
+    margin: 0 auto;
+  }
+  
+  #controls {
+    background-color: hsl(209, 69%, 24%);
+  }
+  
+  #info {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: white;
+    max-width:800px;
+    display:flex;
+    padding: 16px 30px;
+  }
+  
+  #scores {
+    left:40px;
+    background-color: hsl(209, 52%, 20%);
+    color: white;
+  }
+
+  #scores:hover {
+    background-color: hsl(209, 40%, 31%);
+  }
+  
+  #timer {
+    right:40px;
+  }
+  
+  #intro {
+    text-align:center;
+  }
+  
+  button {
+    background-color: hsl(209, 52%, 20%);
+    color:white;
+    border: none;
+    padding:15px;
+    border-radius: 5px;
+    cursor:pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  #intro button:hover {
+    background-color: rgb(93, 168, 187);
+  }
+  
+  /* quiz container */
+  #quizContainer #title {
+    font-weight:700;
+  }
+  
+  #quizContainer button {
+    background-color: rgb(39, 112, 131);
+    width: 100%;
+    border-radius:15px;
+    cursor:pointer;
+    display: block;
+    color:white;
+    margin: 5px 0;
+    padding: 10px 10px ;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  }
+  
+  #quizContainer button:hover {
+    background-color: hsl(209, 40%, 31%);
+  }
+  
+  /* score indicator */
+  #scoreIndicator, #errorIndicator {
+    border-top: 1px solid #999;
+    color: lightblue;
+    font-size: 1.3em;
+    margin: 10px auto;
+    margin: 0;
+    font-weight:700;
+  }
+  
+  #scoreIndicator p, #errorIndicator p {
+  margin:0;
+  margin-top:10px;
+  }
+  
+  #records input, #records button {
+  margin-top:5px;
+  }
+  
+  /* responsiveness settings */
+  @media only screen and (min-width: 768px) {
+
+    #positionWrapper {
+      min-height: 80%
+    }
+  
+    #finish #records {
+      display:flex;
+      align-items: center;
+    }
+  
+    #finish #records input, #finish #records button {
+      margin-left:10px;
+    }
+
+    #finish #records input, #finish #records button:hover {
+      background-color: hsl(204, 20%, 95%);
+    }
+  
+    #info {
+      flex-direction:row;
+    }
+  
+    #quizContainer {
+      min-width:30%;
+      background-color: rgb(129, 128, 128);
+      padding: 10px 20px 30px 20px;
+      border-radius: 25px;
+    }
+  
+  }
+  .card-footer {
+    text-align: center;
+    color: #fdfeff;
+    background-color: hsl(209, 69%, 24%);
+    padding-bottom: 20px;
+  }
+
+  .container {
+    text-align: center;
+    color: #fdfeff;
+    background-color: hsl(209, 69%, 24%);
+  }
