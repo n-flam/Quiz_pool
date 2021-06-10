@@ -185,7 +185,7 @@ body {
     text-align: center;
     color: #fdfeff;
     background-color: hsl(209, 69%, 24%);
-    padding-bottom: 20px;
+    padding-bottom: 20px 20px;
   }
 
   .container {
